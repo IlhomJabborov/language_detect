@@ -1,7 +1,8 @@
 import nemo
 import nemo.collections.asr as nemo_asr
 
-vad_model = nemo_asr.models.EncDecSpeakerLabelModel.from_pretrained(model_name="langid_ambernet")
+model ="/ambernet.nemo"
+vad_model = nemo_asr.models.EncDecSpeakerLabelModel.from_pretrained(model_name=model)
 
 def detection(audio_path) :
   
